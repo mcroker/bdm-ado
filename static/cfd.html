@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <script src="../lib/VSS.SDK.min.js"></script>
+  <!-- 
+       Alternatively, if the packagePath attribute is not set for this file in your extension manifest (see above), do this:
+        <script src="../node_modules/vss-web-extension-sdk/lib/VSS.SDK.min.js"></script>
+  -->
+  <script type="text/javascript">
+
+    // Initialize the VSS sdk
+    VSS.init({
+      usePlatformScripts: true,
+      usePlatformStyles: true,
+      explicitNotifyLoaded: true
+    });
+
+    VSS.require(["dist/cfd"], function (app) { });
+
+  </script>
+</head>
+
+<body>
+  <div class="widget">
+    <h2 class="title">BDM Cumulative Flow</h2>
+    <div id="Chart-Container"></div>
+  </div>
+</body>
+
+</html>

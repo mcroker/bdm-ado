@@ -1,0 +1,23 @@
+{
+  "name": "bdm-ado",
+  "version": "0.1.13",
+  "description": "ADO Utilities & Widgets to support BDM Programme.",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p .",
+    "postbuild": "npm run package",
+    "package": "tfx extension create",
+    "gallery-publish": "tfx extension publish --rev-version",
+    "clean": "rimraf ./dist && rimraf ./*.vsix"
+  },
+  "devDependencies": {
+    "rimraf": "^2.5.4",
+    "typescript": "^2.1.4"
+  },
+  "dependencies": {
+    "@types/jquery": "^2.0.34",
+    "@types/q": "0.0.32",
+    "azure-devops-ui": "^2.167.36",
+    "vss-web-extension-sdk": "^5.141.0"
+  }
+}
