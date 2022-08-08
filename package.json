@@ -5,19 +5,22 @@
   "private": true,
   "scripts": {
     "build": "tsc -p .",
-    "postbuild": "npm run package",
-    "package": "tfx extension create",
-    "gallery-publish": "tfx extension publish --rev-version",
+    "package": "npx tfx-cli extension create --manifests vss-extension-dev.json",
+    "package:prod": "npx tfx-cli extension create --manifests vss-extension-prod.json",
+    "publish": "tfx extension publish --rev-version --manifests vss-extension-dev.json --token \"$ADO_MARKETPLACE_TOKEN\"",
+    "publish:prod": "tfx extension publish --rev-version --manifests vss-extension-.json --token \"$ADO_MARKETPLACE_TOKEN\"",
     "clean": "rimraf ./dist && rimraf ./*.vsix"
   },
   "devDependencies": {
     "rimraf": "^2.5.4",
-    "typescript": "^2.1.4"
+    "typescript": "^2.1.4",
+    "@types/jquery": "^2.0.34",
+    "@types/q": "0.0.32"
   },
   "dependencies": {
-    "@types/jquery": "^2.0.34",
-    "@types/q": "0.0.32",
     "azure-devops-ui": "^2.167.36",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "vss-web-extension-sdk": "^5.141.0"
   }
 }

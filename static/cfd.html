@@ -4,10 +4,6 @@
 
 <head>
   <script src="../lib/VSS.SDK.min.js"></script>
-  <!-- 
-       Alternatively, if the packagePath attribute is not set for this file in your extension manifest (see above), do this:
-        <script src="../node_modules/vss-web-extension-sdk/lib/VSS.SDK.min.js"></script>
-  -->
   <script type="text/javascript">
 
     // Initialize the VSS sdk
@@ -17,7 +13,7 @@
       explicitNotifyLoaded: true
     });
 
-    VSS.require(["dist/cfd"], function (app) { });
+    VSS.require(["dist/CfdWidget"], function () { VSS.notifyLoadSucceeded(); });
 
   </script>
 </head>

@@ -13,6 +13,10 @@
     "icons": {
         "default": "static/images/logo.png"
     },
+    "demands": [
+        "contribution/ms.vss-dashboards-web.widget-sdk-version-2",
+        "contribution/ms.vss-web.charts-service"
+    ],
     "scopes": [
         "vso.work",
         "vso.graph",
@@ -43,7 +47,7 @@
     },
     "repository": {
         "type": "git",
-        "uri": "https://www.github.com/mcroker"
+        "uri": "https://www.github.com/mcroker/bdm-ado"
     },
     "files": [
         {
@@ -60,7 +64,6 @@
             "packagePath": "lib"
         }
     ],
-    "demands": ["contribution/ms.vss-dashboards-web.widget-sdk-version-2", "contribution/ms.vss-web.charts-service"],
     "contributions": [
         {
             "id": "BDM.CumulativeFlowDiagram",

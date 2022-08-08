@@ -7,7 +7,9 @@
         "outDir": "dist/",
         "sourceMap": true,
         "types": [
-            "vss-web-extension-sdk"
-        ]	
+            "vss-web-extension-sdk",
+            "jquery"
+        ],"jsx": "react"
     }
+   
 }

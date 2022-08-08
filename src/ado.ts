@@ -1,10 +1,58 @@
 import { getClient as getWiTClient } from "TFS/WorkItemTracking/RestClient";
 import { WorkItemErrorPolicy, WorkItemExpand } from 'TFS/WorkItemTracking/Contracts';
-import { WorkItem, StatesSummary, StateSummary, toState, StatusSnapshot } from "./types";
+import { WorkItem, StatesSummary, StateSummary, toState, PBIState, StatusSnapshot } from "./types";
 
-import { strDate, batchArray } from "./utils";
+import { strDate, chunkArray } from "./utils";
 
-export function sumarizeWorkItemSet(statusDate: Date, workitems: WorkItem[]): StatusSnapshot {
+import { authTokenManager } from "VSS/Authentication/Services";
+import { convertUserTimeToClientTimeZone } from "VSS/Utils/Date";
+
+type PBI = WorkItem<PBIState>;
+
+export async function sendmail() {
+    console.log('bob');
+    const witClient = getWiTClient();
+    const organization = 'mcroker';
+    const project = 'DevOps Demo';
+    const sessionToken = await VSS.getAccessToken();
+    console.log('st',JSON.stringify(sessionToken));
+    const authToken = authTokenManager.getAuthorizationHeader(sessionToken);
+    $.ajax({
+        type: 'POST',
+        url: `https://dev.azure.com/${organization}/${project}/_apis/wit/sendmail?api-version=7.1-preview.1`,
+        contentType: "application/json; charset=utf-8",
+        data: JSON.stringify({
+            message: {
+                body: 'Hello World',
+                subject: 'My email',
+                to: {
+                    tfIds: ['657d8df9-bcfa-4fc9-bcbc-18531981e3b5']
+                }
+            },
+            projectId: project
+        }),
+        beforeSend: function (xhr) {
+            xhr.setRequestHeader('Authorization', authToken);
+        },
+        success: (e) => {
+            console.log(e);
+        },
+        error: (e) => {
+            console.error(e);
+        }
+    });
+}
+
+/**
+ * Create sumary metrics from an array of WorkItem
+ * 
+ * Aggreates the storyPoint and WorkItem counts for each state.
+ * 
+ * @param statusDate The status date for the set (passed back in the object)
+ * @param workitems  An array of workitems to be sumarized
+ * @returns          A status snapshot for the set
+ */
+export function sumarizeWorkItemSet<T extends WorkItem<any>>(statusDate: Date, workitems: T[]): StatusSnapshot {
     const status = workitems.reduce((results, item) => {
         const result: StateSummary = results[item.state] || { count: 0, storyPoints: 0 };
         result.count = result.count += 1;
@@ -18,17 +66,35 @@ export function sumarizeWorkItemSet(statusDate: Date, workitems: WorkItem[]): St
     }
 }
 
+/**
+ * Retrieves all workitems for each date in the set and creates a status snapshot.
+ * 
+ * @param dates The dates for which workitems are to be retreived
+ * @returns     An array of status snapshots for the dates
+ */
 export async function getStatusSnapshotForDates(dates: Date[]): Promise<StatusSnapshot[]> {
     return await Promise.all(
         dates.map(async dt => sumarizeWorkItemSet(dt, await getWorkItems(dt)))
     );
 }
 
-export function getWorkItemsForDates(dates: Date[]): Promise<WorkItem[][]> {
+/**
+ * Retrieves and expands all workitems for each date passed in the dates param
+ * 
+ * @param dates The dates to retrieve
+ * @returns     An array of WorkItem for each date (WorkItem[date][])
+ */
+export function getWorkItemsForDates(dates: Date[]): Promise<PBI[][]> {
     return Promise.all(dates.map(dt => getWorkItems(dt)));
 }
 
-export async function getWorkItems(asOf?: Date): Promise<WorkItem[]> {
+/**
+ * retrieve all work-items (optionally for a given date)
+ * 
+ * @param asOf (optional) date asOf which information is to be retrieved
+ * @returns    Array of WorkItems
+ */
+export async function getWorkItems(asOf?: Date): Promise<PBI[]> {
     try {
         const witClient = getWiTClient();
         // Query the project to retreive the Id field for all workitems
@@ -38,9 +104,9 @@ export async function getWorkItems(asOf?: Date): Promise<WorkItem[]> {
         const workItemIds = queryResult.workItems.map(item => item.id);
 
         // Map this into an array of number
-        const batchedWorkItems = batchArray(workItemIds, 200);
+        const batchedWorkItems = chunkArray(workItemIds, 200);
 
-        const workItems: WorkItem[] = [];
+        const workItems: PBI[] = [];
         await Promise.all(batchedWorkItems.map(async ids => {
             workItems.push(...await getWorkItemsBatch(ids, asOf));
         }));
@@ -50,10 +116,16 @@ export async function getWorkItems(asOf?: Date): Promise<WorkItem[]> {
     }
 }
 
-async function getWorkItemsBatch(ids: number[], asOf?: Date): Promise<WorkItem[]> {
+/**
+ * Retrieve a batch of (200?) WorkItems, calls ADO and maps the response
+ * 
+ * @param ids  An array of (max 200) WorkItems to retrieve
+ * @param asOf (optional) date asOf which information is to be retrieved
+ * @returns    An array of expanded WorkItems
+ */
+async function getWorkItemsBatch(ids: number[], asOf?: Date): Promise<PBI[]> {
     const witClient = getWiTClient();
     try {
-
         const items = await witClient.getWorkItems(
             ids,
             undefined,
