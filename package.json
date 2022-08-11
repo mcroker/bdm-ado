@@ -9,13 +9,15 @@
     "package:prod": "npx tfx-cli extension create --manifests vss-extension-prod.json",
     "publish": "tfx extension publish --rev-version --manifests vss-extension-dev.json --token \"$ADO_MARKETPLACE_TOKEN\"",
     "publish:prod": "tfx extension publish --rev-version --manifests vss-extension-.json --token \"$ADO_MARKETPLACE_TOKEN\"",
-    "clean": "rimraf ./dist && rimraf ./*.vsix"
+    "clean": "rimraf ./dist && rimraf ./*.vsix",
+    "http-server": "http-server -p 9000 ."
   },
   "devDependencies": {
-    "rimraf": "^2.5.4",
-    "typescript": "^2.1.4",
     "@types/jquery": "^2.0.34",
-    "@types/q": "0.0.32"
+    "@types/q": "0.0.32",
+    "http-server": "^14.1.1",
+    "rimraf": "^2.5.4",
+    "typescript": "^2.1.4"
   },
   "dependencies": {
     "azure-devops-ui": "^2.167.36",

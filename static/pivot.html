@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <script src="../lib/VSS.SDK.min.js"></script>
+  <script type="text/javascript">
+
+    // Initialize the VSS sdk
+    VSS.init({
+      usePlatformScripts: true,
+      usePlatformStyles: true,
+      explicitNotifyLoaded: true
+    });
+
+    VSS.require(["dist/PivotWidget"], function () { VSS.notifyLoadSucceeded(); });
+
+  </script>
+</head>
+
+<body>
+  <div class="widget">
+    <h2 class="title">BDM Pivot Widget</h2>
+    <div id="Chart-Container"></div>
+  </div>
+</body>
+
+</html>

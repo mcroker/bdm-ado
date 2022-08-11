@@ -1,0 +1,172 @@
+{
+    "count": 1,
+    "value": [
+        {
+            "id": 56341,
+            "rev": 33,
+            "fields": {
+                "System.Id": 56341,
+                "System.AreaId": 1338,
+                "System.AreaPath": "BDC\\OAS (roll up)\\Production Support (roll up)\\PMO",
+                "System.TeamProject": "BDC",
+                "System.NodeName": "PMO",
+                "System.AreaLevel1": "BDC",
+                "System.AreaLevel2": "OAS (roll up)",
+                "System.AreaLevel3": "Production Support (roll up)",
+                "System.AreaLevel4": "PMO",
+                "System.Rev": 33,
+                "System.AuthorizedDate": "2022-08-10T21:55:10.23Z",
+                "System.RevisedDate": "9999-01-01T00:00:00Z",
+                "System.IterationId": 1384,
+                "System.IterationPath": "BDC\\OAS",
+                "System.IterationLevel1": "BDC",
+                "System.IterationLevel2": "OAS",
+                "System.WorkItemType": "Project Risk",
+                "System.State": "Response Implemented",
+                "System.Reason": "Moved to state Response Implemented",
+                "System.AssignedTo": {
+                    "displayName": "Boutin, Mathieu M W-T",
+                    "url": "https://spsprodcca1.vssps.visualstudio.com/Aeafd7f02-cb40-4799-ad15-473a554f7f16/_apis/Identities/5b3ce99a-ae1b-643c-9606-f399034c418a",
+                    "_links": {
+                        "avatar": {
+                            "href": "https://dev.azure.com/VP-BD/_apis/GraphProfile/MemberAvatars/aad.NWIzY2U5OWEtYWUxYi03NDNjLTk2MDYtZjM5OTAzNGM0MThh"
+                        }
+                    },
+                    "id": "5b3ce99a-ae1b-643c-9606-f399034c418a",
+                    "uniqueName": "mathieu.boutin@servicecanada.gc.ca",
+                    "imageUrl": "https://dev.azure.com/VP-BD/_apis/GraphProfile/MemberAvatars/aad.NWIzY2U5OWEtYWUxYi03NDNjLTk2MDYtZjM5OTAzNGM0MThh",
+                    "descriptor": "aad.NWIzY2U5OWEtYWUxYi03NDNjLTk2MDYtZjM5OTAzNGM0MThh"
+                },
+                "System.CreatedDate": "2022-06-15T15:17:35.66Z",
+                "System.CreatedBy": {
+                    "displayName": "Preethi Veerabhadrappa",
+                    "url": "https://spsprodcca1.vssps.visualstudio.com/Aeafd7f02-cb40-4799-ad15-473a554f7f16/_apis/Identities/33d22b25-dfe0-6efe-862d-b176d8293cb8",
+                    "_links": {
+                        "avatar": {
+                            "href": "https://dev.azure.com/VP-BD/_apis/GraphProfile/MemberAvatars/aad.MzNkMjJiMjUtZGZlMC03ZWZlLTg2MmQtYjE3NmQ4MjkzY2I4"
+                        }
+                    },
+                    "id": "33d22b25-dfe0-6efe-862d-b176d8293cb8",
+                    "uniqueName": "preethi.veerabhadrappa@hrsdc-rhdcc.gc.ca",
+                    "imageUrl": "https://dev.azure.com/VP-BD/_apis/GraphProfile/MemberAvatars/aad.MzNkMjJiMjUtZGZlMC03ZWZlLTg2MmQtYjE3NmQ4MjkzY2I4",
+                    "descriptor": "aad.MzNkMjJiMjUtZGZlMC03ZWZlLTg2MmQtYjE3NmQ4MjkzY2I4"
+                },
+                "System.ChangedDate": "2022-08-10T21:55:10.23Z",
+                "System.ChangedBy": {
+                    "displayName": "Malek Dabbous",
+                    "url": "https://spsprodcca1.vssps.visualstudio.com/Aeafd7f02-cb40-4799-ad15-473a554f7f16/_apis/Identities/d759e175-30d9-6b22-8b7c-6f13d46a6141",
+                    "_links": {
+                        "avatar": {
+                            "href": "https://dev.azure.com/VP-BD/_apis/GraphProfile/MemberAvatars/aad.ZDc1OWUxNzUtMzBkOS03YjIyLThiN2MtNmYxM2Q0NmE2MTQx"
+                        }
+                    },
+                    "id": "d759e175-30d9-6b22-8b7c-6f13d46a6141",
+                    "uniqueName": "malek.dabbous@hrsdc-rhdcc.gc.ca",
+                    "imageUrl": "https://dev.azure.com/VP-BD/_apis/GraphProfile/MemberAvatars/aad.ZDc1OWUxNzUtMzBkOS03YjIyLThiN2MtNmYxM2Q0NmE2MTQx",
+                    "descriptor": "aad.ZDc1OWUxNzUtMzBkOS03YjIyLThiN2MtNmYxM2Q0NmE2MTQx"
+                },
+                "System.AuthorizedAs": {
+                    "displayName": "Malek Dabbous",
+                    "url": "https://spsprodcca1.vssps.visualstudio.com/Aeafd7f02-cb40-4799-ad15-473a554f7f16/_apis/Identities/d759e175-30d9-6b22-8b7c-6f13d46a6141",
+                    "_links": {
+                        "avatar": {
+                            "href": "https://dev.azure.com/VP-BD/_apis/GraphProfile/MemberAvatars/aad.ZDc1OWUxNzUtMzBkOS03YjIyLThiN2MtNmYxM2Q0NmE2MTQx"
+                        }
+                    },
+                    "id": "d759e175-30d9-6b22-8b7c-6f13d46a6141",
+                    "uniqueName": "malek.dabbous@hrsdc-rhdcc.gc.ca",
+                    "imageUrl": "https://dev.azure.com/VP-BD/_apis/GraphProfile/MemberAvatars/aad.ZDc1OWUxNzUtMzBkOS03YjIyLThiN2MtNmYxM2Q0NmE2MTQx",
+                    "descriptor": "aad.ZDc1OWUxNzUtMzBkOS03YjIyLThiN2MtNmYxM2Q0NmE2MTQx"
+                },
+                "System.PersonId": 257977486,
+                "System.Watermark": 274958,
+                "System.CommentCount": 4,
+                "System.Title": "L3 Business Processes: Incomplete Business Processes for R1",
+                "System.BoardColumn": "Response Implemented",
+                "System.BoardColumnDone": false,
+                "Microsoft.VSTS.Common.StateChangeDate": "2022-07-28T14:48:35.863Z",
+                "Microsoft.VSTS.Common.ActivatedDate": "2022-07-07T16:44:06.463Z",
+                "Microsoft.VSTS.Common.ActivatedBy": {
+                    "displayName": "Valérie Clément-Lafond",
+                    "url": "https://spsprodcca1.vssps.visualstudio.com/Aeafd7f02-cb40-4799-ad15-473a554f7f16/_apis/Identities/9a89de09-8984-62a7-a1e8-d071dadf4c77",
+                    "_links": {
+                        "avatar": {
+                            "href": "https://dev.azure.com/VP-BD/_apis/GraphProfile/MemberAvatars/aad.OWE4OWRlMDktODk4NC03MmE3LWExZTgtZDA3MWRhZGY0Yzc3"
+                        }
+                    },
+                    "id": "9a89de09-8984-62a7-a1e8-d071dadf4c77",
+                    "uniqueName": "valerie.clementlafond@hrsdc-rhdcc.gc.ca",
+                    "imageUrl": "https://dev.azure.com/VP-BD/_apis/GraphProfile/MemberAvatars/aad.OWE4OWRlMDktODk4NC03MmE3LWExZTgtZDA3MWRhZGY0Yzc3",
+                    "descriptor": "aad.OWE4OWRlMDktODk4NC03MmE3LWExZTgtZDA3MWRhZGY0Yzc3"
+                },
+                "Microsoft.VSTS.Common.ResolvedDate": "2022-07-28T14:48:35.863Z",
+                "Microsoft.VSTS.Common.ResolvedBy": {
+                    "displayName": "Alice Wang",
+                    "url": "https://spsprodcca1.vssps.visualstudio.com/Aeafd7f02-cb40-4799-ad15-473a554f7f16/_apis/Identities/bd4bf984-e462-61a8-a217-ff8454256518",
+                    "_links": {
+                        "avatar": {
+                            "href": "https://dev.azure.com/VP-BD/_apis/GraphProfile/MemberAvatars/aad.YmQ0YmY5ODQtZTQ2Mi03MWE4LWEyMTctZmY4NDU0MjU2NTE4"
+                        }
+                    },
+                    "id": "bd4bf984-e462-61a8-a217-ff8454256518",
+                    "uniqueName": "alice.m.wang@hrsdc-rhdcc.gc.ca",
+                    "imageUrl": "https://dev.azure.com/VP-BD/_apis/GraphProfile/MemberAvatars/aad.YmQ0YmY5ODQtZTQ2Mi03MWE4LWEyMTctZmY4NDU0MjU2NTE4",
+                    "descriptor": "aad.YmQ0YmY5ODQtZTQ2Mi03MWE4LWEyMTctZmY4NDU0MjU2NTE4"
+                },
+                "Microsoft.VSTS.Common.StackRank": 1285714282.0,
+                "Microsoft.VSTS.Scheduling.TargetDate": "2022-08-08T00:00:00Z",
+                "Custom.ProjectorInitiative": "OAS Solution",
+                "Custom.DateIdentified": "2022-05-26T00:00:00Z",
+                "Custom.RiskCategory": "Business Process and Operational",
+                "Custom.InitialRiskProbability": "Low",
+                "Custom.InitialRiskImpact": "Medium",
+                "Custom.RiskTriggerDate": "2022-08-08T00:00:00Z",
+                "Custom.ResidualRiskProbability": "2-Medium",
+                "Custom.ResidualRiskImpact": "2-Medium",
+                "Custom.RiskCategory_OAS": "Change",
+                "Custom.ImpactedWorkAreas": "Business Design & Products;Change Management;Curam",
+                "WEF_4DACB271D38443F6BCE0DC4CCE2C2294_System.ExtensionMarker": true,
+                "WEF_4DACB271D38443F6BCE0DC4CCE2C2294_Kanban.Column": "Response Implemented",
+                "WEF_4DACB271D38443F6BCE0DC4CCE2C2294_Kanban.Column.Done": false,
+                "Custom.CurrentImpactLevel": "2-Moderate",
+                "Custom.IssueConsequence2": "Schedule",
+                "Custom.RiskNature": "Controllable",
+                "Custom.RiskOrigin": "Internal",
+                "Custom.PMISID#": 59,
+                "Custom.ProbabilityLevel": "2-Medium",
+                "Custom.PMOCategory": "Change",
+                "System.Description": "<div><span>Business Processes for R1 will continue to be refined by the BAD team, require review and approval by the Design and Business Authority at the same time Detail R1 Design kickoff.</span> </div><div><span><br></span> </div><div><span><b>Risk Trigger:&nbsp;</b><span>Alignment of workshops and activities between SI and BAD leads</span></span><br> </div>",
+                "Custom.ConsequenceDescription": "<div><span style=\"display:inline !important;\">Completion of R1 Process analysis is expected to be after the R1 Design workshops complete. Any new findings will create re-work and may introduce new work. Dependency is for processes to be finalized 30 days after start of TA (June 16), current timeline would suggest June 20 at the earliest</span><br> </div><div> </div>",
+                "Custom.RiskContext": "<div><span>Business Processes provided for R1 are deemed incomplete by the BAD team and will require additional&nbsp;evaluation and possible rework to move from AS IS towards a Curam To Be<br></span><span></span><br> </div>",
+                "Custom.RiskRootCause": "<div><span>Incomplete Business Processes<br></span> </div><div> </div><div><br> </div><div>Business Processes provided for R1 are deemed incomplete by the BAD team and will require additional evaluation and possible rework to move from AS IS towards a Curam To Be<br> </div><div><span><br></span> </div><div><span></span><br> </div>",
+                "Custom.RiskExistingControlsorMitigations": "<div><span><span style=\"color:rgba(0, 0, 0, 0.9);display:inline !important;\">Target Resolution Date: June 15, 2022 (Release 1 - Completed); Ongoing (Release 2)</span><br></span> </div><div> </div><div> </div><div><span><span style=\"color:rgba(0, 0, 0, 0.9);display:inline !important;\"><br></span></span> </div><div><span><span style=\"color:rgba(0, 0, 0, 0.9);display:inline !important;\">Jun 28:&nbsp;Effort ongoing to validate best process maps to leverage to support future continued user story elaboration, including required updates from Business Authority / BAD. &nbsp;Additional SME validation may be required in lieu of complex process maps defined. &nbsp;</span></span> </div><div><span><span style=\"color:rgba(0, 0, 0, 0.9);display:inline !important;\"><br></span></span> </div><div><span>Joint review session with Business team to map processes to existing User Stories for R1 and ideally manage any scope creep from BAD / business&nbsp;review of processes.&nbsp;<div style=\"box-sizing:border-box;margin:0px;cursor:text;clear:both;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;\"><p lang=EN-US style=\"box-sizing:border-box;margin:0px;font-weight:normal;text-align:left;\"><span lang=EN-US style=\"box-sizing:border-box;margin:0px;padding:0.285614px 0px 0px;font-size:11.2px;font-family:Calibri, Calibri_EmbeddedFont, Calibri_MSFontService, sans-serif;line-height:13px;vertical-align:-0.285614px;\"><span style=\"box-sizing:border-box;margin:0px;vertical-align:0.285614px;line-height:0px;\"><br></span></span> </p> </div><div style=\"margin:0px;clear:both;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;text-align:start;\"><p lang=EN-US style=\"margin:0px;font-weight:normal;text-align:left;\"><span lang=EN-US style=\"margin:0px;padding:0.207945px 0px 0px;font-size:14.4px;font-family:Calibri, Calibri_EmbeddedFont, Calibri_MSFontService, sans-serif;line-height:17px;vertical-align:-0.207945px;\"><span style=\"margin:0px;vertical-align:0.207945px;line-height:0px;\">July 18th – Under review by the<span>&nbsp;</span></span></span><span lang=EN-US style=\"margin:0px;padding:0.207945px 0px 0px;font-size:14.4px;font-family:Calibri, Calibri_EmbeddedFont, Calibri_MSFontService, sans-serif;line-height:17px;vertical-align:-0.207945px;\"><span style=\"margin:0px;vertical-align:0.207945px;line-height:0px;\">Business Stream for completeness.</span></span><span style=\"margin:0px;font-size:14.4px;font-family:Calibri, Calibri_EmbeddedFont, Calibri_MSFontService, sans-serif;\">?</span> </p> </div><div style=\"margin:0px;clear:both;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;text-align:start;\"><p lang=EN-US style=\"margin:0px;font-weight:normal;text-align:left;\"><br> </p> </div><div style=\"box-sizing:border-box;margin:0px;cursor:text;clear:both;font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web&quot;, Arial, Verdana, sans-serif;font-size:12px;\"><p lang=EN-US style=\"box-sizing:border-box;margin:0px;font-weight:normal;text-align:left;\"><span lang=EN-US style=\"box-sizing:border-box;margin:0px;padding:0.285614px 0px 0px;font-size:11.2px;font-family:Calibri, Calibri_EmbeddedFont, Calibri_MSFontService, sans-serif;line-height:13px;vertical-align:-0.285614px;\"><span style=\"box-sizing:border-box;margin:0px;vertical-align:0.285614px;line-height:0px;\"></span></span> </p> </div></span> </div><div> </div>",
+                "Custom.RiskImpactStatement": "<div><span>Operational Effectiveness<br></span><span></span><br> </div>",
+                "Custom.RiskDescription": "<div>L3 Business Processes: Current business processes received from Business Authority represent as-is state, and do not seem to represent OAS program complexity. &nbsp;Given current state of L3 processes, &nbsp;there is a risk that user stories will not cover the full scope of required functionality and additional work and refinement may be found in testing. <br> </div>"
+            },
+            "_links": {
+                "self": {
+                    "href": "https://dev.azure.com/VP-BD/7f843e74-7fa0-49a2-8e9b-6308f6cab07e/_apis/wit/workItems/56341"
+                },
+                "workItemUpdates": {
+                    "href": "https://dev.azure.com/VP-BD/7f843e74-7fa0-49a2-8e9b-6308f6cab07e/_apis/wit/workItems/56341/updates"
+                },
+                "workItemRevisions": {
+                    "href": "https://dev.azure.com/VP-BD/7f843e74-7fa0-49a2-8e9b-6308f6cab07e/_apis/wit/workItems/56341/revisions"
+                },
+                "workItemComments": {
+                    "href": "https://dev.azure.com/VP-BD/7f843e74-7fa0-49a2-8e9b-6308f6cab07e/_apis/wit/workItems/56341/comments"
+                },
+                "html": {
+                    "href": "https://dev.azure.com/VP-BD/7f843e74-7fa0-49a2-8e9b-6308f6cab07e/_workitems/edit/56341"
+                },
+                "workItemType": {
+                    "href": "https://dev.azure.com/VP-BD/7f843e74-7fa0-49a2-8e9b-6308f6cab07e/_apis/wit/workItemTypes/Project%20Risk"
+                },
+                "fields": {
+                    "href": "https://dev.azure.com/VP-BD/7f843e74-7fa0-49a2-8e9b-6308f6cab07e/_apis/wit/fields"
+                }
+            },
+            "url": "https://dev.azure.com/VP-BD/7f843e74-7fa0-49a2-8e9b-6308f6cab07e/_apis/wit/workItems/56341"
+        }
+    ]
+}

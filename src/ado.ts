@@ -5,7 +5,6 @@ import { WorkItem, StatesSummary, StateSummary, toState, PBIState, StatusSnapsho
 import { strDate, chunkArray } from "./utils";
 
 import { authTokenManager } from "VSS/Authentication/Services";
-import { convertUserTimeToClientTimeZone } from "VSS/Utils/Date";
 
 type PBI = WorkItem<PBIState>;
 
